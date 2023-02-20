@@ -1,24 +1,4 @@
 repos:
-# -   repo: https://github.com/ambv/black
-#     rev: 23.1.0
-#     hooks:
-#     - id: black
-#       language_version: python3.11.2
-#       stages: [commit]
-# -   repo: https://github.com/PyCQA/flake8
-#     rev: 3.7.9
-#     hooks:
-#     - id: flake8
-#       stages: [commit]
--   repo: local
-    hooks:
-    - id: pytest
-      name: pytest
-      language: system
-      entry: pytest -v
-      always_run: true
-      pass_filenames: false
-      stages: [commit]
 -   repo: local
     hooks:
       - id: requirements
